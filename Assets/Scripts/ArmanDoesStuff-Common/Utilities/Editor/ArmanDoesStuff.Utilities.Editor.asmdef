@@ -1,0 +1,18 @@
+{
+    "name": "ArmanDoesStuff.Utilities.Editor",
+    "rootNamespace": "ArmanDoesStuff.Utilities.Editor",
+    "references": [
+        "GUID:60bdb9eb65d20d14f9c757cd984bf85f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
