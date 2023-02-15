@@ -25,18 +25,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2517652451685133342}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3268427178033294167}
+  m_Father: {fileID: 3268427179005449874}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: -0.58931434, y: 0}
-  m_AnchorMax: {x: 1.5893143, y: 1}
+  m_AnchorMin: {x: -1.2240127, y: 0}
+  m_AnchorMax: {x: 2.2240126, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 724.4962, y: 195.9287}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8108857246651520295
 CanvasRenderer:
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.11372549}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -226,14 +226,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3268427179005449874}
-  - {fileID: 9009861684862749679}
   m_Father: {fileID: 3268427177709386148}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 1.4625822}
-  m_SizeDelta: {x: 498.8, y: 500}
+  m_SizeDelta: {x: 315.1666, y: 293.881}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3268427178033294164
 MonoBehaviour:
@@ -284,10 +283,10 @@ MonoBehaviour:
   sizeControl: 1
   size: {x: 400, y: 250}
   automaticLayoutMargins:
-    Left: 25
-    Right: 25
-    Top: 25
-    Bottom: 25
+    Left: 0
+    Right: 0
+    Top: 0
+    Bottom: 0
   useInfiniteScrolling: 0
   infiniteScrollingSpacing: 0.25
   useOcclusionCulling: 0
@@ -299,7 +298,7 @@ MonoBehaviour:
   pagination: {fileID: 3268427179465055984}
   useToggleNavigation: 1
   snapTarget: 2
-  snapSpeed: 10
+  snapSpeed: 15
   thresholdSpeedToSnap: -1
   useHardSnapping: 1
   useUnscaledTime: 0
@@ -367,11 +366,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3268427179311383544}
+  - {fileID: 9009861684862749679}
   m_Father: {fileID: 3268427178033294167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.0000011050678, y: 0}
+  m_AnchorMax: {x: 0.9999989, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -548,7 +548,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 469.1404, y: 469.1404}
+  m_SizeDelta: {x: 270.5166, y: 270.5166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1383820405303308311
 CanvasRenderer:
