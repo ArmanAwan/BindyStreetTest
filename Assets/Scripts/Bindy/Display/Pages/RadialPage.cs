@@ -1,14 +1,8 @@
 
 using ArmanDoesStuff.Utilities;
-using Bindy.Data;
 using DanielLochner.Assets.SimpleScrollSnap;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
-using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 
 namespace Bindy.Display
@@ -79,15 +73,9 @@ namespace Bindy.Display
         private void FixedUpdate()
         {
             if (scrollRect.horizontalNormalizedPosition < 0.1f || scrollRect.horizontalNormalizedPosition > .9f)
-            {
-                Debug.Log("scroll off");
                 scrollRect.enabled = false;
-            }
             else
-            {
-                Debug.Log("scroll on");
                 scrollRect.enabled = true;
-            }
         }
     }
 }

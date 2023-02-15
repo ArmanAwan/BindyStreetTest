@@ -1,13 +1,8 @@
 using Bindy.Data;
-using Codice.Client.BaseCommands;
 using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-using System.Web.Script.Serialization;
 using TMPro;
 
 using UnityEngine;
-using UnityEngine.iOS;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
