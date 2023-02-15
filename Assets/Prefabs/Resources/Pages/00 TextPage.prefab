@@ -320,7 +320,7 @@ MonoBehaviour:
   scrollRect: {fileID: 1773721947}
   templates:
   - {fileID: 6257781376028308115, guid: 81537cb492242d34a9aff71efe90c821, type: 3}
-  - {fileID: 270514834059021677, guid: 45f8c2e8312b92a41a4f64ecbed58567, type: 3}
+  - {fileID: 270514834059021677, guid: 7d36679273d73004da29e0957929bc46, type: 3}
 --- !u!1 &3280765103619248220
 GameObject:
   m_ObjectHideFlags: 0

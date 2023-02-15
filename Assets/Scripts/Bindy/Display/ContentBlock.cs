@@ -7,6 +7,7 @@ using System.Web.Script.Serialization;
 using TMPro;
 
 using UnityEngine;
+using UnityEngine.iOS;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
@@ -16,6 +17,17 @@ namespace Bindy.Display
     {
         [SerializeField] Image mainImage;
         [SerializeField] TMP_Text mainText;
+        [SerializeField] float fontMult = 0.02f;
+
+        private void Awake()
+        {
+            foreach (var item in GetComponentsInChildren<TMP_Text>())
+            {
+                item.fontSize = Screen.height * fontMult;
+                Debug.Log(item.fontSize);
+            }
+        }
+
         public void SetContentFromID(int id, int itemNum)
         {
             StartCoroutine(SetContentFromID_Croute(id, itemNum));

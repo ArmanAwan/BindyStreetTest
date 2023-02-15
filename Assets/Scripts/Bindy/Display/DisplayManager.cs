@@ -23,7 +23,7 @@ namespace Bindy.Display
             //in case it fails to load, but I've ignored that possibility for the test
             while (DataManager.jsonData == null)
                 yield return null;
-            LoadPage(0); //Load first page - 0 being the main page
+            LoadPage(1); //Load first page
         }
 
         public void LoadPage(int index)
