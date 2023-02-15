@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 namespace Bindy.Data
 {
-    public class DataManager : MonoBehaviour
+    public static class DataManager
     {
         public class jsonPlaceholderKey
         {
@@ -16,14 +16,9 @@ namespace Bindy.Data
             public string url;
             public string thumbnailUrl;
         }
-        public jsonPlaceholderKey[] jsonData;
+        public static jsonPlaceholderKey[] jsonData;
 
-        void Start()
-        {
-            StartCoroutine(LoadFirstPage());
-        }
-
-        public IEnumerator LoadFirstPage()
+        public static IEnumerator LoadData_Croute()
         {
             //Populate jsonData
             //Create UnityWebRequest with jsonplaceholder images 
@@ -37,12 +32,10 @@ namespace Bindy.Data
                 }
                 else if (request.isDone) //if none are found, deserialize into jsonPlaceholderKey class
                 {
-                    Debug.Log(request.downloadHandler.text);
                     JavaScriptSerializer js = new JavaScriptSerializer();
                     jsonData = js.Deserialize<jsonPlaceholderKey[]>(request.downloadHandler.text);
                 }
             }
-            //Load Page 1
         }
     }
 }

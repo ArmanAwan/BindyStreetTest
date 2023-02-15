@@ -12,14 +12,18 @@ using UnityEngine.UI;
 
 namespace Bindy.Display
 {
-    public class DisplayContentFromID : MonoBehaviour
+    public class ContentBlock : MonoBehaviour
     {
-        public IEnumerator GetImageFromID_Croute(int id)
+        [SerializeField] Image mainImage;
+        [SerializeField] TMP_Text mainText;
+        public void SetContentFromID(int id, int itemNum)
+        {
+            StartCoroutine(SetContentFromID_Croute(id, itemNum));
+        }
+        IEnumerator SetContentFromID_Croute(int id, int itemNum)
         {
             //Get the image url based on the index
-            DataManager dataManager = FindObjectOfType<DataManager>();
-            Debug.Log(dataManager.jsonData[id].thumbnailUrl);
-            UnityWebRequest request = UnityWebRequestTexture.GetTexture(dataManager.jsonData[id].thumbnailUrl);
+            UnityWebRequest request = UnityWebRequestTexture.GetTexture(DataManager.jsonData[id].thumbnailUrl);
             //Request and error check
             yield return request.SendWebRequest();
             if (request.error != null)
@@ -33,10 +37,10 @@ namespace Bindy.Display
                 new Rect(0, 0, tex.width, tex.height),
                 Vector2.one / 2);
                 //Set sprite
-                GetComponentInChildren<Image>().sprite = sprite;
+                mainImage.sprite = sprite;
             }
             //Set text
-            GetComponentInChildren<TMP_Text>().text = dataManager.jsonData[id].title;
+            mainText.text = $"{itemNum} - {DataManager.jsonData[id].title}";
         }
     }
 }

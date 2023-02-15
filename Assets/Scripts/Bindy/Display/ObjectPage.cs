@@ -6,7 +6,7 @@ namespace Bindy.Display
 {
     public class ObjectPage : Page
     {
-        public override GameObject[] DisplayData()
+        public override void DisplayData()
         {
             throw new System.NotImplementedException();
         }

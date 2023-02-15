@@ -9,7 +9,11 @@ namespace Bindy.Display
     public abstract class Page : MonoBehaviour
     {
         public string header;
-        public virtual GameObject[] DisplayData()
+        private void Awake()
+        {
+            GetComponent<Canvas>().worldCamera = Camera.main;
+        }
+        public virtual void DisplayData()
         {
             Debug.LogError("Trying to Get Data from Base");
             throw new System.NotImplementedException();
