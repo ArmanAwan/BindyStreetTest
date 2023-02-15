@@ -24,7 +24,6 @@ namespace Bindy.Display
             foreach (var item in GetComponentsInChildren<TMP_Text>())
             {
                 item.fontSize = Screen.height * fontMult;
-                Debug.Log(item.fontSize);
             }
         }
 

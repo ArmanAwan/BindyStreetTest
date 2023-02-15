@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 5601315770515208118}
   - component: {fileID: 8947831320519051624}
   m_Layer: 5
-  m_Name: ContentBlockTextL
+  m_Name: CB_TextL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
