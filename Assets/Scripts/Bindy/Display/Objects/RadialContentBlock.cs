@@ -25,6 +25,8 @@ namespace Bindy.Display
         {
             int id = UnityEngine.Random.Range(0, 4000);
             //Get the image url based on the index
+            if (DataManager.jsonData == null)
+                yield break;
             UnityWebRequest request = UnityWebRequestTexture.GetTexture(DataManager.jsonData[id].thumbnailUrl);
             //Request and error check
             yield return request.SendWebRequest();

@@ -1,7 +1,7 @@
 using System.Collections;
-using System.Web.Script.Serialization;
 using UnityEngine;
 using UnityEngine.Networking;
+//using Newtonsoft.Json;
 
 namespace Bindy.Data
 {
@@ -31,8 +31,10 @@ namespace Bindy.Data
                 }
                 else if (request.isDone) //if none are found, deserialize into jsonPlaceholderKey class
                 {
-                    JavaScriptSerializer js = new JavaScriptSerializer();
-                    jsonData = js.Deserialize<jsonPlaceholderKey[]>(request.downloadHandler.text);
+                    //JavaScriptSerializer js = new JavaScriptSerializer();
+                    //jsonData = js.Deserialize<jsonPlaceholderKey[]>(request.downloadHandler.text);
+
+                    //jsonData = JsonConvert.DeserializeObject<jsonPlaceholderKey>(request.downloadHandler.text);
                 }
             }
         }

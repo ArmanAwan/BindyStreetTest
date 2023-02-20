@@ -1,7 +1,6 @@
 using Bindy.Data;
 using System.Collections;
 using TMPro;
-
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -29,6 +28,9 @@ namespace Bindy.Display
         IEnumerator SetContentFromID_Croute(int id, int itemNum)
         {
             //Get the image url based on the index
+
+            if (DataManager.jsonData == null)
+                yield break;
             UnityWebRequest request = UnityWebRequestTexture.GetTexture(DataManager.jsonData[id].thumbnailUrl);
             //Request and error check
             yield return request.SendWebRequest();
